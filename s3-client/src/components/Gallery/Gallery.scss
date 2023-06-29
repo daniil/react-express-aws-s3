@@ -1,0 +1,10 @@
+@use '../../styles/partials/variables' as *;
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  &__empty {
+    color: $secondary;
+  }
+}

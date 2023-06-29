@@ -1,0 +1,30 @@
+@use './styles/partials/variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  color: $primary;
+  background-color: $light-1;
+}
+
+input,
+button {
+  font-family: 'Dosis', sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: $secondary;
+}
+
+.app {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 1rem;
+}

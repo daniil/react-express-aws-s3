@@ -1,0 +1,18 @@
+@use '../../styles/partials/variables' as *;
+
+.gallery-item {
+  width: 15rem;
+  padding: 0.5rem;
+  border: 2px solid rgba($color: $light-2, $alpha: 0.5);
+  background-color: rgba($color: #fff, $alpha: 0.5);
+  &__img {
+    display: block;
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+  }
+  &__title {
+    font-size: 1.1rem;
+    margin: 1.25rem 0 0 0;
+  }
+}

@@ -1,0 +1,42 @@
+@use '../../styles/partials/variables' as *;
+
+.image-upload {
+  flex-basis: 18rem;
+  flex-shrink: 0;
+  border-right: 3px solid rgba($secondary, 0.75);
+  border-bottom: 3px solid rgba($secondary, 0.4);
+  padding: 1rem 2rem 2rem 1rem;
+  background-color: rgba(#fff, 0.5);
+  &__title {
+    margin-top: 0;
+    color: $secondary
+  }
+  &__field {
+    margin-bottom: 1.5rem;
+  }
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  &__input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0;
+    border: 1px solid $secondary;
+  }
+  &__submit {
+    width: 100%;
+    background-color: $accent;
+    border: none;
+    padding: 1rem;
+    color: $light-1;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.25s;
+    &:disabled {
+      opacity: 0.5;
+      background-color: rgba($color: $secondary, $alpha: 0.25);
+      color: $secondary;
+    }
+  }
+}
